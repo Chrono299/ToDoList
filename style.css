@@ -1,0 +1,155 @@
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #fb9062;
+  min-width: 200px;/*gia na leitourgei to grid*/
+  display: grid;
+  /**grid-gap: 20px;**/
+}
+
+h1 {
+  text-align: center;
+  font-family: Luckiest Guy;
+  font-size: 80px;
+  letter-spacing: 2px;
+  color: #45fff1;
+}
+
+.input_pos {
+  margin: auto;
+  width: 15%;
+  padding: 12px 20px;
+  font-size: 15px;
+  outline: none;
+  border-style: none;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', sans-serif;
+  letter-spacing: -0.2px;
+  background: #ffaf8c;
+}
+
+.input_pos::placeholder {
+  color: #111;
+  opacity: 0.5;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+  transition: color 0.3s ease-in-out;
+
+}
+
+input:hover::placeholder {
+    color: #403e3d;
+    opacity: 0.3;
+}
+
+.input_pos:active {
+  background: #ffcab3;
+}
+
+.input_pos:focus {
+  background: #ffcab3;
+}
+
+.hint_text {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body ul {
+  margin: 0 34%;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+  background: #ffaf8c;
+  position: relative;
+  padding: 12px 30px;
+  font-size: 24px;
+  font-family: 'Trebuchet MS', sans-serif;
+
+} 
+
+ul li:hover {
+  background: #ffcab3;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.close {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 40px;
+  color: #403e3d80;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.close:hover {
+  font-size: 18px;
+  color: white;
+  background-color: red;
+}
+
+.btnRename {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  height: 100%;
+  width: 40px;
+  color: #403e3d80;
+  font-size: 18px;
+  border: none;
+  font-family: 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+}
+
+.btnRename:hover {
+  font-size: 24px;
+  color: black;
+}
+
+.clearBtn {
+  background: transparent;
+  position: absolute;
+  right: 0;
+  width: 80px;
+  margin: 20px 34% 0 0;
+  color: white;
+  border-right: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.clearBtn:hover {
+  background: black;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+/** NOT READY **/
+@media only screen and (max-width: 1280px) {
+  body ul {
+    margin: 0 27%;
+    padding: 0;
+  }
+
+  .clearBtn {
+    margin: 20px 27.2% 0 0;
+    width: 60px;
+  }
+}
